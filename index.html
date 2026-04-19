@@ -14,5 +14,29 @@
     <img class="banner" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80" alt="Team collaborating on laptops">
 
     <div class="content">
+        <form action="/submit_registration" method="POST">
+            <fieldset>
+                <legend>1. Participant Details</legend>
+                <div class="row">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="user_email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000">
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Mumbai">
+                    </div>
+                </div>
+            </fieldset>
 </body>
 </html>
