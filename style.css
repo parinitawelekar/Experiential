@@ -1,4 +1,4 @@
-<style>
+
         :root {
               --primary: #1e3a8a;
             --success: #16a34a;
@@ -120,5 +120,3 @@
             .row { grid-template-columns: 1fr; }
             .content { padding: 20px; }
         }
-    </style>
-
