@@ -1,4 +1,4 @@
-/* Body */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f3f6;
@@ -12,7 +12,7 @@ body {
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
 }
-/* Header */
+
 h1 {
     text-align: center;
     background-color: #2874f0;
@@ -21,13 +21,13 @@ h1 {
     border-radius: 5px;
 }
 
-/* Product Title */
+
 h2 {
     text-align: center;
     color: #212121;
 }
 
-/* Image */
+
 img {
     display: block;
     margin: 20px auto;
@@ -48,7 +48,7 @@ p:nth-of-type(1) {
     font-weight: bold;
 }
 
-/* Description */
+
 p:nth-of-type(2) {
     text-align: center;
     color: #555;
@@ -65,7 +65,7 @@ input[type="radio"] {
     margin: 8px;
 }
 
-/* Button */
+
 button {
     display: block;
     margin: 25px auto;
@@ -78,26 +78,26 @@ button {
     cursor: pointer;
 }
 
-/* Hover Effect */
+
 button:hover {
     background-color: #ff9f00;
 }
 
-/* Reviews Section */
+
 h2:last-of-type {
     margin-top: 30px;
     border-top: 2px solid #ddd;
     padding-top: 15px;
 }
 
-/* Review Names */
+
 p b {
     color: #212121;
     display: block;
     margin-top: 10px;
 }
 
-/* Review Text */
+
 p {
     text-align: center;
 }
