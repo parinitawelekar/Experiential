@@ -54,13 +54,13 @@ p:nth-of-type(2) {
     color: #555;
 }
 
-/* Section Headings */
+
 h3 {
     margin-top: 20px;
     color: #333;
 }
 
-/* Radio Buttons */
+
 input[type="radio"] {
     margin: 8px;
 }
@@ -70,7 +70,7 @@ button {
     display: block;
     margin: 25px auto;
     padding: 12px 25px;
-    background-color: #fb641b;  /* Flipkart style */
+    background-color: #fb641b;  
     color: white;
     border: none;
     border-radius: 5px;
