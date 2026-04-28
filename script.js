@@ -38,9 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Error in registration");
     });
 });
-app.post("/register", (req, res) => {
-   res.json({ message: "Registered successfully" });
-});
+
 function showPopup(){
     document.getElementById("popup").style.display = "flex";
 }
