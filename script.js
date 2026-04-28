@@ -9,3 +9,28 @@ function showTab(tabId, btn){
     document.getElementById(tabId).classList.add("active");
     btn.classList.add("active");
 }
+document.getElementById("regForm").addEventListener("submit", function(e){
+    e.preventDefault(); // form reload stop
+
+    const data = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        city: document.getElementById("city").value
+    };
+
+    fetch("http://localhost:3000/register", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(response => {
+        alert(response.message);
+    })
+    .catch(err => {
+        alert("Error in registration");
+    });
+});
