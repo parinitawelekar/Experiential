@@ -26,8 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
       body: JSON.stringify(data)
     })
     .then(res => res.json())
-    .then(res => alert(res.message))
-    .catch(() => alert("Error in registration"));
+   .then(response => {
+            alert(response.message);
+        
+            document.getElementById("popup").style.display = "flex";
   });
 });
 function showPopup(){
