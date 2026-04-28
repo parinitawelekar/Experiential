@@ -21,17 +21,6 @@ body {
 }
 
 
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-/* Zoom */
-img:hover {
-    transform: scale(1.1);
-}
 .tabs{
     display:flex;
     gap:10px;
