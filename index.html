@@ -116,7 +116,7 @@
             </fieldset>
             <br>
              <div class="actions">
-               <button type="submit" onclick="alert('Processing Registration...')">
+               <button type="submit" onclick="alertshowPopup()">
     Complete Registration • ₹599
 </button>
                 <button class="btn secondary" type="reset">Clear Form</button>
@@ -130,6 +130,14 @@
     &copy; 2026 All Rights Reserved
 </footer>
     <script src="script.js"></script>
+    <button onclick="showPopup()">Complete Registration • ₹599</button>
+
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <h2>🎉 Registration Done!</h2>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
 </body>
 </html>
 
