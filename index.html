@@ -54,32 +54,64 @@
             </fieldset>
             <br>
             <fieldset>
-                <legend>3. Payment Method</legend>
-                <div class="paybox">
-                    <p style="margin-top:0"><strong>Credit / Debit Card</strong></p>
-                    <div style="margin-bottom:15px">
-                        <label for="card">Card Number</label>
-                        <input type="number" id="card" placeholder="0000 0000 0000 0000">
-                    </div>
-                    <div class="row">
-                        <div>
-                            <label for="expiry">Expiry (MM/YY)</label>
-                            <input type="text" id="expiry" placeholder="12/28">
-                        </div>
-                        <div>
-                            <label for="cvv">CVV</label>
-                            <input type="password" id="cvv" placeholder="***">
-                        </div>
-                    </div>
-                    <hr style="border:0; border-top: 1px solid #e2e8f0; margin: 20px 0;">
-                    <label for="bank">Net Banking</label>
-                    <select id="bank">
-                        <option value="">Choose a Bank</option>
-                        <option>Global Bank Corp</option>
-                        <option>National Heritage Bank</option>
-                        <option>Digital Trust Union</option>
-                    </select>
-                </div>
+    <legend>3. Payment Method</legend>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button type="button" class="tab-btn active" onclick="showTab('card', this)">
+            Credit Card
+        </button>
+
+        <button type="button" class="tab-btn" onclick="showTab('bank', this)">
+            Net Banking
+        </button>
+
+        <button type="button" class="tab-btn" onclick="showTab('upi', this)">
+            UPI
+        </button>
+    </div>
+
+    <!-- Credit Card -->
+    <div id="card" class="tab-content active">
+        <label>Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456">
+
+        <div class="row">
+            <div>
+                <label>Expiry</label>
+                <input type="text" placeholder="MM/YY">
+            </div>
+
+            <div>
+                <label>CVV</label>
+                <input type="password" placeholder="123">
+            </div>
+        </div>
+
+        <label>Name on Card</label>
+        <input type="text" placeholder="Cardholder Name">
+    </div>
+
+    <!-- Net Banking -->
+    <div id="bank" class="tab-content">
+        <label>Select Bank</label>
+        <select>
+            <option>Choose Bank</option>
+            <option>HDFC Bank</option>
+            <option>ICICI Bank</option>
+            <option>SBI</option>
+            <option>Axis Bank</option>
+        </select>
+
+        <label>Account Holder Name</label>
+        <input type="text" placeholder="Enter Name">
+    </div>
+
+    <!-- UPI -->
+    <div id="upi" class="tab-content">
+        <label>UPI ID</label>
+        <input type="text" placeholder="example@upi">
+    </div>
             </fieldset>
             <br>
              <div class="actions">
