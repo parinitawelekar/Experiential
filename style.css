@@ -34,10 +34,6 @@ img:hover {
 
 
 
-h3 {
-    margin-top: 20px;
-    color: #333;
-}
 
 
 input[type="radio"] {
@@ -63,11 +59,7 @@ button:hover {
 }
 
 
-h2:last-of-type {
-    margin-top: 30px;
-    border-top: 2px solid #ddd;
-    padding-top: 15px;
-}
+
 footer {
     text-align: center;
     margin-top: 20px;
