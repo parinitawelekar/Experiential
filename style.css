@@ -31,7 +31,50 @@ img {
 img:hover {
     transform: scale(1.1);
 }
+tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
 
+.tab-btn{
+    flex:1;
+    padding:10px;
+    border:none;
+    background:lightgray;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.tab-btn.active{
+    background:blue;
+    color:white;
+}
+
+.tab-content{
+    display:none;
+}
+
+.tab-content.active{
+    display:block;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+}
+
+.row div{
+    flex:1;
+}
 
 input{
    width:100%;
