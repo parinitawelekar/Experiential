@@ -9,6 +9,10 @@ function showTab(tabId, btn){
     document.getElementById(tabId).classList.add("active");
     btn.classList.add("active");
 }
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("regForm").addEventListener("submit", function(e){
     e.preventDefault();
