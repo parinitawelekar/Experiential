@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
       phone: document.getElementById("phone").value,
       city: document.getElementById("city").value
     };
-
     fetch("http://localhost:3000/register", {
         method: "POST",
         headers: {
