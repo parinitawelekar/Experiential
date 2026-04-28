@@ -21,16 +21,25 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     fetch("http://localhost:3000/register", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
     })
     .then(res => res.json())
-   .then(response => {
+     .then(response => {
             alert(response.message);
         
             document.getElementById("popup").style.display = "flex";
-  });
+        
+    })
+    .catch(err => {
+        alert("Error in registration");
+    });
+});
+app.post("/register", (req, res) => {
+   res.json({ message: "Registered successfully" });
 });
 function showPopup(){
     document.getElementById("popup").style.display = "flex";
