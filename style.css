@@ -89,18 +89,27 @@ input, select{
    border-radius:10px;
    border:1px solid #ccc;
 }
-button {
+.actions button {
     display: block;
     margin: 25px auto;
     padding: 12px 25px;
-    background-color: #fb641b;  
+    background-color: #fb641b;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
-
+.tab-btn{
+    flex:1;
+    padding:10px;
+    border:none;
+    background:lightgray;
+    border-radius:5px;
+    cursor:pointer;
+    margin:0;
+    display:inline-block;
+}
 
 button:hover {
     background-color: #ff9f00;
