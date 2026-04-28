@@ -18,7 +18,7 @@
     </div>
     
     <div class="content">
-       <form action="/submit_registration" method="POST"> 
+ <form id="regForm">
             <br>
             <fieldset>
                 <legend>1. Participant Details</legend>
@@ -116,7 +116,9 @@
             </fieldset>
             <br>
              <div class="actions">
-                <button class="btn primary" type="submit">Complete Registration • ₹599</button>
+               <button type="button" onclick="alert('Processing Registration...')">
+    Complete Registration • ₹599
+</button>
                 <button class="btn secondary" type="reset">Clear Form</button>
             </div>
         </form>
